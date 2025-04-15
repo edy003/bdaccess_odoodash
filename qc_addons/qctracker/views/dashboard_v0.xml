@@ -1,0 +1,16 @@
+<odoo>
+    <menuitem id="menu_qctracker_root" name="QC Tracker"/>
+    
+    <!-- Action client pour le dashboard -->
+    <record id="action_qctracker_dashboard" model="ir.actions.client">
+        <field name="name">QC Dashboard</field>
+        <field name="tag">qctracker.dashboard</field>
+    </record>
+    
+    <!-- Menu dans le backend -->
+    <menuitem id="menu_qctracker_dashboard" 
+              name="Dashboard" 
+              parent="menu_qctracker_root" 
+              sequence="10" 
+              action="action_qctracker_dashboard"/>
+</odoo>

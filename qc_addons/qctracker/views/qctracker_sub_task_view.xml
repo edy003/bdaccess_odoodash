@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_qctracker_subtask_tree" model="ir.ui.view">
+            <field name="name">qctracker.subtask.tree</field>
+            <field name="model">qctracker.subtask</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name" string="🏷️ Nom"/>
+                    <field name="task_id" string="📌 Tâche"/>
+                    <field name="start_date" string="📅 Début"/>
+                    <field name="end_date" string="🏁 Fin"/>
+                    <field name="status" string="🚦 Statut"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_qctracker_subtask_form" model="ir.ui.view">
+            <field name="name">qctracker.subtask.form</field>
+            <field name="model">qctracker.subtask</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name" string="🏷️ Nom"/>
+                            <field name="task_id" string="📌 Tâche"/>
+                            <field name="employee_id" string="🧑‍💼 Employé"/>
+                            <field name="start_date" string="📅 Début"/>
+                            <field name="end_date" string="🏁 Fin"/>
+                            <field name="status" string="🚦 Statut"/>
+                        </group>
+                        <field name="description" string="📝 Description"/>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

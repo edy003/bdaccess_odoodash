@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_qctracker_projectdelivery_tree" model="ir.ui.view">
+            <field name="name">qctracker.projectdelivery.tree</field>
+            <field name="model">qctracker.projectdelivery</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="project_id" string="🚀 Projet"/>
+                    <field name="employee_id" string="🧑‍💼 Manager"/>
+                    <field name="on_time" string="⏱️ À Temps"/>
+                    <field name="delivery_date" string="📅 Date de Livraison"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_qctracker_projectdelivery_form" model="ir.ui.view">
+            <field name="name">qctracker.projectdelivery.form</field>
+            <field name="model">qctracker.projectdelivery</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="project_id" string="🚀 Projet"/>
+                            <field name="employee_id" string="🧑‍💼 Manager"/>
+                            <field name="on_time" string="⏱️ À Temps"/>
+                            <field name="delivery_date" string="📅 Date de Livraison"/>
+                            <field name="comments" string="📝 Commentaires"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+       </data>
+</odoo>

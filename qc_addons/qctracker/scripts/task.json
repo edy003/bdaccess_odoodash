@@ -1,0 +1,338 @@
+# Structure JSON complète et imbriquée des départements, catégories, compétences et projets
+COMPANY_DATA = {
+    "SOLUTION": {
+        "name": "SOLUTION",
+        "skill_categories": {
+            "Développement logiciel": {
+                "skills": [
+                    "Software Development", "Web Development", "Mobile Development", 
+                    "API Development", "Full-Stack Development"
+                ]
+            },
+            "Architecture IT": {
+                "skills": [
+                    "System Integration", "Solution Architecture", "Enterprise Architecture", 
+                    "Technical Design", "Microservices Architecture"
+                ]
+            },
+            "Cloud Computing": {
+                "skills": [
+                    "Cloud Architecture", "Cloud Migration", "AWS", "Azure", 
+                    "Google Cloud Platform", "Multi-Cloud Strategy"
+                ]
+            },
+            "Données": {
+                "skills": [
+                    "Big Data", "Data Engineering", "Data Science", 
+                    "Data Visualization", "Business Intelligence", "ETL Processes"
+                ]
+            },
+            "Intelligence artificielle": {
+                "skills": [
+                    "AI Research", "Machine Learning", "Natural Language Processing", 
+                    "Computer Vision", "Deep Learning"
+                ]
+            },
+            "Gestion de données": {
+                "skills": [
+                    "Database Management", "SQL", "NoSQL", "Data Modeling", 
+                    "Data Governance", "Master Data Management"
+                ]
+            },
+            "DevOps": {
+                "skills": [
+                    "DevOps", "CI/CD Pipeline", "Containerization", "Kubernetes", 
+                    "Infrastructure as Code", "Monitoring & Observability"
+                ]
+            }
+        },
+        "projects": {
+            "Refonte application métier": {
+                "tasks": {
+                    "Analyse des besoins utilisateurs": {
+                        "subtasks": [
+                            "Entretiens avec les utilisateurs clés", 
+                            "Revue des processus actuels",
+                            "Identification des points de friction", 
+                            "Priorisation des fonctionnalités"
+                        ]
+                    },
+                    "Développement backend": {
+                        "subtasks": [
+                            "Conception API RESTful", 
+                            "Implémentation modèle de données", 
+                            "Développement logique d'authentification",
+                            "Optimisation requêtes base de données", 
+                            "Tests unitaires modules critiques", 
+                            "Documentation technique API"
+                        ]
+                    },
+                    "Développement interfaces utilisateur": {
+                        "subtasks": [
+                            "Maquettage des écrans", 
+                            "Développement composants UI", 
+                            "Implémentation logique client",
+                            "Tests d'utilisabilité", 
+                            "Optimisation responsive"
+                        ]
+                    },
+                    "Migration des données": {
+                        "subtasks": [
+                            "Analyse données existantes", 
+                            "Conception scripts migration", 
+                            "Tests intégrité données",
+                            "Validation migration", 
+                            "Documentation processus"
+                        ]
+                    }
+                }
+            },
+            "Développement plateforme analytique": {
+                "tasks": {
+                    "Conception architecture data": {
+                        "subtasks": [
+                            "Cartographie sources de données", 
+                            "Conception data lake", 
+                            "Définition flux ETL",
+                            "Architecture temps réel"
+                        ]
+                    },
+                    "Développement pipelines de données": {
+                        "subtasks": [
+                            "Implémentation connecteurs sources", 
+                            "Développement jobs transformation", 
+                            "Mise en place orchestration",
+                            "Tests performance"
+                        ]
+                    }
+                }
+            },
+            "Architecture microservices": {
+                "tasks": {
+                    "Conception architecture": {
+                        "subtasks": [
+                            "Décomposition domaines fonctionnels", 
+                            "Définition interfaces API", 
+                            "Conception modèle de données distribué",
+                            "Stratégie de déploiement"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "Support_SI": {
+        "name": "Support_SI",
+        "skill_categories": {
+            "Support utilisateur": {
+                "skills": [
+                    "IT Support", "Helpdesk", "User Training", 
+                    "Troubleshooting", "Onboarding Support"
+                ]
+            },
+            "Administration système": {
+                "skills": [
+                    "System Administration", "Windows Server", "Linux Administration", 
+                    "Active Directory", "Group Policy Management"
+                ]
+            },
+            "Infrastructure réseau": {
+                "skills": [
+                    "Network Administration", "LAN/WAN Configuration", "Network Security", 
+                    "VPN Setup", "Firewall Management"
+                ]
+            },
+            "Services cloud": {
+                "skills": [
+                    "Cloud Services", "SaaS Administration", "Microsoft 365", 
+                    "Google Workspace", "Cloud Backup Solutions"
+                ]
+            },
+            "Infrastructure": {
+                "skills": [
+                    "Infrastructure Management", "Server Deployment", "Datacenter Management", 
+                    "Storage Solutions", "Virtualization"
+                ]
+            },
+            "Cybersécurité": {
+                "skills": [
+                    "IT Security", "Security Monitoring", "Vulnerability Assessment", 
+                    "Incident Response", "Security Compliance"
+                ]
+            }
+        },
+        "projects": {
+            "Migration infrastructure cloud": {
+                "tasks": {
+                    "Audit infrastructure existante": {
+                        "subtasks": [
+                            "Inventaire des serveurs physiques", 
+                            "Analyse des applications hébergées", 
+                            "Cartographie réseau actuelle",
+                            "Évaluation capacité stockage", 
+                            "Mesure performances actuelles", 
+                            "Identification points de vigilance"
+                        ]
+                    },
+                    "Conception architecture cible": {
+                        "subtasks": [
+                            "Définition architecture cloud", 
+                            "Sélection services managés", 
+                            "Conception réseau virtuel",
+                            "Stratégie de sécurité cloud", 
+                            "Plan de haute disponibilité"
+                        ]
+                    }
+                }
+            },
+            "Déploiement solution VDI": {
+                "tasks": {
+                    "Étude besoins utilisateurs": {
+                        "subtasks": [
+                            "Analyse profils utilisateurs", 
+                            "Estimation capacités requises", 
+                            "Définition expérience utilisateur",
+                            "Catalogue applications"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "CONSULTING": {
+        "name": "CONSULTING",
+        "skill_categories": {
+            "Management de projet": {
+                "skills": [
+                    "Project Management", "Agile Methodology", "Scrum Master", 
+                    "PRINCE2", "PMP", "Project Portfolio Management"
+                ]
+            },
+            "Analyse métier": {
+                "skills": [
+                    "Business Analysis", "Requirements Engineering", "Process Mapping", 
+                    "Use Case Development", "Gap Analysis"
+                ]
+            },
+            "Stratégie d'entreprise": {
+                "skills": [
+                    "Business Strategy", "Digital Transformation", "Change Management", 
+                    "Organizational Design", "Process Optimization"
+                ]
+            },
+            "Marketing": {
+                "skills": [
+                    "Marketing", "Market Research", "Digital Marketing", 
+                    "Customer Experience", "Brand Strategy", "Go-to-Market Strategy"
+                ]
+            },
+            "Analyse financière": {
+                "skills": [
+                    "Financial Analysis", "Cost-Benefit Analysis", "Budget Planning", 
+                    "ROI Assessment", "Financial Modeling"
+                ]
+            },
+            "Conseil en management": {
+                "skills": [
+                    "Management Consulting", "Executive Coaching", "Leadership Development", 
+                    "Team Building", "Performance Management"
+                ]
+            },
+            "Formation": {
+                "skills": [
+                    "Training Development", "Knowledge Transfer", "Learning Management", 
+                    "Capability Development", "Skill Assessment"
+                ]
+            }
+        },
+        "projects": {
+            "Accompagnement transformation digitale": {
+                "tasks": {
+                    "Diagnostic maturité digitale": {
+                        "subtasks": [
+                            "Analyse écosystème IT", 
+                            "Évaluation compétences internes", 
+                            "Benchmark concurrentiel",
+                            "Identification opportunités digitales"
+                        ]
+                    },
+                    "Plan de conduite du changement": {
+                        "subtasks": [
+                            "Analyse d'impact organisationnel", 
+                            "Identification des parties prenantes", 
+                            "Élaboration plan de communication",
+                            "Conception modules de formation", 
+                            "Définition indicateurs d'adoption", 
+                            "Planning déploiement progressif"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "BID": {
+        "name": "BID",
+        "skill_categories": {
+            "Gestion d'appels d'offres": {
+                "skills": [
+                    "Bidding", "Tender Management", "RFP Response", 
+                    "Competitive Analysis", "Win Strategy Development"
+                ]
+            },
+            "Rédaction de propositions": {
+                "skills": [
+                    "Proposal Writing", "Technical Writing", "Solution Design", 
+                    "Value Proposition Development", "Pricing Strategy"
+                ]
+            },
+            "Négociation": {
+                "skills": [
+                    "Contract Negotiation", "Terms & Conditions Review", "Legal Compliance", 
+                    "Commercial Terms Negotiation", "Partnership Agreements"
+                ]
+            },
+            "Estimation de projet": {
+                "skills": [
+                    "Project Estimation", "Cost Calculation", "Effort Estimation", 
+                    "Risk Assessment", "Resource Planning"
+                ]
+            },
+            "Veille stratégique": {
+                "skills": [
+                    "Market Intelligence", "Competitor Analysis", "Opportunity Tracking", 
+                    "Industry Trend Analysis", "Client Relationship Management"
+                ]
+            },
+            "Marketing d'offres": {
+                "skills": [
+                    "Solution Marketing", "Presentation Design", "Executive Briefing", 
+                    "Demo Preparation", "Client Workshop Facilitation"
+                ]
+            }
+        },
+        "projects": {
+            "Réponse appel d'offres secteur public": {
+                "tasks": {
+                    "Analyse du cahier des charges": {
+                        "subtasks": [
+                            "Identification exigences techniques", 
+                            "Analyse critères d'évaluation", 
+                            "Vérification conformité administrative",
+                            "Identification points discriminants"
+                        ]
+                    },
+                    "Élaboration proposition technique": {
+                        "subtasks": [
+                            "Analyse exigences fonctionnelles", 
+                            "Benchmark solutions techniques", 
+                            "Conception architecture proposée",
+                            "Rédaction spécifications", 
+                            "Élaboration planning implémentation", 
+                            "Identification risques et mitigation"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

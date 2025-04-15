@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="qctracker_department_view_tree" model="ir.ui.view">
+            <field name="name">qctracker.department.tree</field>
+            <field name="model">qctracker.department</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="employee_count"/>
+                    <field name="active"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="qctracker_department_view_form" model="ir.ui.view">
+            <field name="name">qctracker.department.form</field>
+            <field name="model">qctracker.department</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="employee_ids" widget="many2many_tags"/>
+                            <field name="project_ids" widget="many2many_tags"/>
+                            <field name="active"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="qctracker_department_view_kanban" model="ir.ui.view">
+            <field name="name">qctracker.department.kanban</field>
+            <field name="model">qctracker.department</field>
+            <field name="arch" type="xml">
+                <kanban>
+                    <field name="id" invisible="1"/>
+                    <templates>
+                        <t t-name="kanban-box">
+                            <div class="oe_kanban_global_click">
+                                <div>
+                                    <strong><field name="name"/></strong>
+                                </div>
+                                <div>
+                                    Employees: <field name="employee_count"/>
+                                </div>
+                                <div>
+                                    Active: <field name="active"/>
+                                </div>
+                            </div>
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+        </record>
+
+        <record id="qctracker_department_action" model="ir.actions.act_window">
+            <field name="name">Departments</field>
+            <field name="res_model">qctracker.department</field>
+            <field name="view_mode">tree,form,kanban</field>
+        </record>
+    </data>
+</odoo>

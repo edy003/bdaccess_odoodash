@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="qctracker_task_view_tree" model="ir.ui.view">
+            <field name="name">qctracker.task.tree.styled</field>
+            <field name="model">qctracker.task</field>
+            <field name="arch" type="xml">
+                <tree decoration-info="status == 'to_do'" decoration-warning="status == 'in_progress'" decoration-danger="status == 'done'">
+                    <field name="name" string="Task Name " widget="badge" decoration-success="1"/>
+                    <field name="employee_id" string="Assigned To " widget="many2one_button"/>
+                    <field name="project_id" string="Project " widget="many2one_button"/>
+                    <field name="priority" string="Priority ⚠️" widget="badge"/>
+                    <field name="status" string="Status " widget="badge"/>
+                    <field name="progress" string="Progress " widget="progressbar"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="qctracker_task_view_form" model="ir.ui.view">
+            <field name="name">qctracker.task.form.styled</field>
+            <field name="model">qctracker.task</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name" readonly="1"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group string="Task Details ℹ️" style="background-color:#f0f8ff;">
+                                <field name="name" string="Task Name " placeholder="Enter task name" style="color:blue;"/>
+                                <field name="description" string="Description " placeholder="Enter description" style="color:green;"/>
+                                <field name="employee_id" string="Assigned To " options="{'no_create_edit': True}"/>
+                                <field name="project_id" string="Project " options="{'no_create_edit': True}"/>
+                                <field name="manager_id" string="Manager " options="{'no_create_edit': True}"/>
+                            </group>
+                            <group string="Dates &amp; Progress " style="background-color:#e6e6fa;">
+                                <field name="start_date" string="Start Date "/>
+                                <field name="expected_end_date" string="Expected End Date "/>
+                                <field name="end_date" string="End Date ✅"/>
+                                <field name="progress" string="Progress " widget="progressbar"/>
+                                <field name="priority" string="Priority ⚠️" widget="radio" options="{'horizontal': true}"/>
+                                <field name="status" string="Status " widget="radio" options="{'horizontal': true}"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Subtasks " style="background-color:#f5f5f5;">
+                                <field name="subtask_ids" widget="one2many_list" options="{'create': true, 'edit': true}"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record id="qctracker_task_view_kanban" model="ir.ui.view">
+            <field name="name">qctracker.task.kanban.styled</field>
+            <field name="model">qctracker.task</field>
+            <field name="arch" type="xml">
+                <kanban default_group_by="status">
+                    <field name="id" invisible="1"/>
+                    <templates>
+                        <t t-name="kanban-box">
+                            <div class="oe_kanban_global_click" style="border: 2px solid #ddd; padding: 10px; margin: 5px; border-radius: 5px; background-color: #f9f9f9; box-shadow: 2px 2px 5px #ccc; transition: transform 0.3s ease;">
+                                <div class="oe_kanban_details">
+                                    <h4 style="color: #333;">
+                                        <a type="open" style="text-decoration: none; color: #007bff;">
+                                            <field name="name"/>
+                                        </a>
+                                    </h4>
+                                    <ul style="list-style-type: none; padding: 0;">
+                                        <li style="margin-bottom: 5px;">
+                                            <i class="fa fa-user" style="color: #008000;"></i> Assigned To: <field name="employee_id" style="color: #008000;"/>
+                                        </li>
+                                        <li style="margin-bottom: 5px;">
+                                            <i class="fa fa-flag" style="color: #800080;"></i> Priority: <field name="priority" style="color: #800080;"/>
+                                        </li>
+                                        <li style="margin-bottom: 5px;">
+                                            <i class="fa fa-tasks" style="color: #000080;"></i> Status: <field name="status" style="color: #000080;"/>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+        </record>
+    </data>
+</odoo>
