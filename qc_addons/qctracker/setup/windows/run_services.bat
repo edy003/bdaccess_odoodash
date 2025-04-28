@@ -3,7 +3,7 @@ echo Starting Odoo and Dash services...
 :: Définir les chemins
 set ODOO_PATH=C:\Users\EDY\Desktop\qc-tracker\
 set ADDONS_PATH=C:\Users\EDY\Desktop\qc-tracker\addons,C:\Users\EDY\Desktop\qc-tracker\qc_addons
-set DB_NAME=qualdb
+set DB_NAME=flashdb
 set DASH_PATH=C:\Users\EDY\Desktop\qc-tracker\dash_app\
 set NGINX_PATH=C:\Users\EDY\Desktop\qc-tracker\qc_addons\qctracker\setup\nginx-1.27.4
 set PYTHON_EXE=C:\Users\EDY\Desktop\qc-tracker\venv\Scripts\python.exe

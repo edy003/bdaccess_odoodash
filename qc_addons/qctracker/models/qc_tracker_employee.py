@@ -85,7 +85,7 @@ class QCTrackerEmployee(models.Model):
     country_id = fields.Many2one(
     'res.country',
     string='Pays',
-    domain="[('name', 'in', ['Cameroun', 'Senegal', 'Nigeria', 'Togo', 'Côte d\'Ivoire', 'Maurice'])]"
+    domain="[('name', 'in', ['Cameroon', 'Senegal', 'Nigeria', 'Togo', 'Côte d'Ivoire', 'Mauritius'])]"
 )
 
     project_ids = fields.One2many('qctracker.project', 'employee_id', string='Projets')

@@ -33,7 +33,7 @@
                                 <field name="email" string="Email" widget="email" placeholder="Enter email" style="color:green;"/>
                                 <field name="phone" string="Phone" widget="phone" placeholder="Enter phone" style="color:purple;"/>
                                 <field name="gender" string="Gender" widget="radio" options="{'horizontal': true}"/>
-                                <field name="country_id" domain="[('name', 'in', ['Cameroun', 'Senegal', 'Nigeria', 'Togo', 'Côte d\'Ivoire', 'Maurice'])]"/>
+                                <field name="country_id" domain="[('code', 'in', ['CM', 'SN', 'NG', 'TG', 'CI', 'MU'])]"/>
                                 <field name="country_dynamic" string="Dynamic Country" options="{'no_create_edit': True}" style="color:brown;"/>
                             </group>
                             <group string="Professional Information" style="background-color:#e6e6fa;">

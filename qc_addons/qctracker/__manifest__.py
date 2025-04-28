@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "QC Tracker",
+    'name': "QC Track",
     'summary': "Quality Control Project and Task Management System",
     'description': """
         Comprehensive Quality Control tracking system with:
@@ -30,6 +30,7 @@
         'views/dashboard_v0.xml',
         'views/qctracker_menus.xml',
         
+        
         #'views/assets.xml',  # Assets (CSS/JS) for the dashboard
         # 'views/views.xml',
         #'views/email_templates.xml',
@@ -55,4 +56,5 @@
     'installable': True,
     'application': True,
     'license': 'LGPL-3', #Added license.
+    'sequence':1,
 }

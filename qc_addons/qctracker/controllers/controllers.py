@@ -45,12 +45,13 @@ class QCTrackerEmployeeController(http.Controller):
 
             for employee in employees:
                 employee_data = {
+                    'id': employee.id,
                     'name': employee.name,
                     'role': employee.role,
                     'country_id': employee.country_id.name if employee.country_id else "Sans pays",
                     'is_manager': employee.is_manager,
                     'gender': employee.gender,
-                    'department': employee.department_id.name if employee.department_id else "Sans département",
+                    'department_id': employee.department_id.name if employee.department_id else "Sans département",
                     'task_ids': employee.task_ids.ids if employee.task_ids else [],
                     'rating_employee_ids': employee.rating_employee_ids.ids if employee.rating_employee_ids else [],
                     'skill_rating_ids': employee.skill_rating_ids.ids if employee.skill_rating_ids else [],
@@ -85,12 +86,12 @@ class QCTrackerEmployeeController(http.Controller):
 
             for rating in ratings:
                 rating_data = {
-                    'employee': rating.employee_id.name if rating.employee_id else "Inconnu",
+                    'employee': rating.employee_id.id if rating.employee_id else "Inconnu",
                     'task': rating.task_id.name if rating.task_id else "Aucune tâche",
                     'rating': rating.rating,
                     'on_time': rating.on_time,
                     'comments': rating.comments,
-                    'evaluation_date': str(rating.evaluation_date),
+                    'evaluation_date': rating.evaluation_date.isoformat(),
                     'state': rating.state,
                     'manager': rating.manager_id.name if rating.manager_id else "Inconnu",       
                 }
@@ -124,7 +125,7 @@ class QCTrackerEmployeeController(http.Controller):
                     'manager': delivery.employee_id.name if delivery.employee_id else "Inconnu",
                     'on_time': delivery.on_time,
                     'comments': delivery.comments,
-                    'delivery_date': str(delivery.delivery_date),
+                    'delivery_date': delivery.delivery_date.isoformat(),
                 }
                 delivery_list.append(delivery_data)
 
@@ -149,16 +150,17 @@ class QCTrackerEmployeeController(http.Controller):
 
             for project in projects:
                 project_data = {
+                    'id': project.id,
                     'name': project.name,
                     'description': project.description or "",
-                    'department': project.department_id.name if project.department_id else "Inconnu",
-                    'start_date': str(project.start_date) if project.start_date else None,
-                    'end_date': str(project.end_date) if project.end_date else None,
-                    'manager': project.employee_id.name if project.employee_id else "Inconnu",
+                    'department_id': project.department_id.name if project.department_id else "Inconnu",
+                    'start_date': project.start_date.isoformat() if project.start_date else None,
+                    'end_date': project.end_date.isoformat() if project.end_date else None,
+                    'employee_id': project.employee_id.name if project.employee_id else "Inconnu",
                     'status': project.status,
                     'progress': project.progress,
                     # 'tags': [tag.name for tag in project.tag_ids],
-                    'project_delivery':project.project_delivery_ids.ids if project.project_delivery_ids else [],
+                    'project_delivery_ids':project.project_delivery_ids.ids if project.project_delivery_ids else [],
                     'task_ids': project.task_ids.ids if project.task_ids else [],
                 }
                 project_list.append(project_data)
@@ -169,7 +171,7 @@ class QCTrackerEmployeeController(http.Controller):
             )
 
         except Exception as e:
-            _logger.error(f"❌ Erreur lors de la récupération des projets : {e}")
+            _logger.error(f" Erreur lors de la récupération des projets : {e}")
             return request.make_response(
                 json.dumps([]),
                 headers=[('Content-Type', 'application/json')]
@@ -183,14 +185,15 @@ class QCTrackerEmployeeController(http.Controller):
 
             for task in tasks:
                 task_data = {
+                    'tache_id':task.id,
                     'name': task.name,
                     'description': task.description or "",
-                    'employee': task.employee_id.name if task.employee_id else "Inconnu",
+                    'employee': task.employee_id.id if task.employee_id else "Inconnu",
                     'manager': task.manager_id.name if task.manager_id else "Inconnu",
-                    'project': task.project_id.name if task.project_id else "Aucun projet",
-                    'start_date': str(task.start_date) if task.start_date else "",
-                    'expected_end_date': str(task.expected_end_date) if task.expected_end_date else "",
-                    'end_date': str(task.end_date) if task.end_date else "",
+                    'project': task.project_id.id if task.project_id else "Aucun projet",
+                    'start_date': task.start_date.isoformat() if task.start_date else "",
+                    'expected_end_date': task.expected_end_date.isoformat() if task.expected_end_date else "",
+                    'end_date': task.end_date.isoformat() if task.end_date else "",
                     'progress': task.progress,
                     'priority': dict(task._fields['priority'].selection).get(task.priority, "Non défini"),
                     'status': dict(task._fields['status'].selection).get(task.status, "Non défini"),
@@ -217,12 +220,13 @@ class QCTrackerEmployeeController(http.Controller):
 
             for sub in subtasks:
                 subtask_data = {
+                    'id':sub.id,
                     'name': sub.name,
                     'description': sub.description or "",
-                    'task': sub.task_id.name if sub.task_id else "Aucune tâche",
+                    'task': sub.task_id.id if sub.task_id else "Aucune tâche",
                     'employee': sub.employee_id.name if sub.employee_id else "Inconnu",
-                    'start_date': str(sub.start_date) if sub.start_date else "",
-                    'end_date': str(sub.end_date) if sub.end_date else "",
+                    'start_date': sub.start_date.isoformat() if sub.start_date else "",
+                    'end_date': sub.end_date.isoformat() if sub.end_date else "",
                     'status': dict(sub._fields['status'].selection).get(sub.status, "Non défini")
                 }
                 subtask_list.append(subtask_data)

@@ -414,7 +414,7 @@ class EmployeeFactory(factory.Factory):
     department_id = factory.SubFactory(DepartmentFactory)
     is_manager = factory.LazyAttribute(lambda o: o.role == 'manager')
     gender = FuzzyChoice(['male', 'female'])
-    country = FuzzyChoice(['Cameroun', 'Senegal', 'Nigeria', 'Togo', 'Côte d\'Ivoire', 'Maurice'])
+    country = FuzzyChoice(['Cameroon', 'Senegal', 'Nigeria', 'Togo', "Côte d'Ivoire", 'Mauritius'])
    
     @factory.post_generation
     def skill_rating_ids(self, create, extracted, **kwargs):
