@@ -1,0 +1,100 @@
+/* Fichier à placer dans assets/sidebar.css */
+
+/* Styles pour la transition de la sidebar */
+#sidebar {
+    transition: transform 0.3s ease;
+}
+
+/* Styles pour la transition du spacer */
+#spacer-col {
+    transition: width 0.3s ease;
+}
+
+/* S'assurer que le contenu principal s'adapte correctement */
+#content-col {
+    transition: all 0.3s ease !important;
+    
+    
+}
+
+
+/* Amélioration du style du bouton burger */
+/* [id="burger-button"] {
+    cursor: pointer;
+} */
+
+/* Éviter les débordements */
+body {
+    overflow-x: hidden;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    padding: 15px 20px;
+    justify-content: end; /* Pousse le menu à droite */
+    margin-top: auto;
+}
+
+
+
+.nav-links .nav-link {
+    color:#285939 !important;
+    text-decoration: none;
+    font-weight: 500 !important;
+    position: relative;
+    transition: color 0.3s ease;
+    padding-bottom: 1rem; /* Espace pour l'underline */
+}
+
+.nav-links .nav-link:hover {
+    color: #285939 !important;    
+}
+
+/* Soulignement uniquement pour le lien actif */
+.nav-links .nav-link.active::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 4px !important;
+    background: #285939 !important;
+    bottom: 0px;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.nav-links .nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-links .nav-link.active::after {
+    width: 100%;
+}
+
+.ag-theme-alpine {
+    --ag-header-background-color: #3a7a4f !important;
+    --ag-header-foreground-color: white !important;
+    --ag-header-cell-hover-background-color: #3a7a4f !important;
+    --ag-row-hover-color: #e5ede8 !important;
+    --ag-selected-row-background-color: #d5e6db !important;
+    --ag-odd-row-background-color: #f5f8f6 !important;
+    --ag-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    --ag-font-size: 14px !important;
+    --ag-grid-size: 6px !important;
+    --ag-cell-horizontal-padding: 12px !important;
+    --ag-cell-horizontal-border: none !important;
+    --ag-range-selection-border-color: #285939 !important;
+    --ag-border-color: #d5e6db !important; 
+    --ag-secondary-border-color: #d5e6db !important;
+    --ag-header-column-separator-color: rgba(255, 255, 255, 0.3) !important;
+    --ag-input-focus-border-color: #285939 !important;
+    --ag-modal-overlay-background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.centered-header {
+    text-align: center !important;
+    justify-content: center !important;
+    display: flex !important;
+    align-items: center !important ;
+}

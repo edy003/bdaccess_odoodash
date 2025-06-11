@@ -3,6 +3,8 @@ odoo.define('qctracker.dashboard', function (require) {
     
     var AbstractAction = require('web.AbstractAction');
     var core = require('web.core');
+    // var current_origin = window.location.origin;
+    // var dash_url = current_origin + '/dash/';
     
     var QCTrackerDashboard = AbstractAction.extend({
         start: function () {
@@ -21,6 +23,7 @@ odoo.define('qctracker.dashboard', function (require) {
             var iframe = $('<iframe>', {
                 id: 'dashboard_iframe',
                 src: 'http://127.0.0.1:8050/dash/',
+                // src: dash_url,
                 frameborder: '0',
                 css: {
                     'width': '100%',
@@ -112,3 +115,5 @@ odoo.define('qctracker.dashboard', function (require) {
     
     return QCTrackerDashboard;
 });
+
+

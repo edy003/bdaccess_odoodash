@@ -27,7 +27,7 @@
         <field name="target">current</field>
     </record>
 
-    <record id="action_qctracker_process" model="ir.actions.act_window">
+    <!-- <record id="action_qctracker_process" model="ir.actions.act_window">
         <field name="name">Processus 🔄</field>
         <field name="res_model">qctracker.process</field>
         <field name="view_mode">tree,form</field>
@@ -39,7 +39,7 @@
         <field name="res_model">qctracker.sub.process</field>
         <field name="view_mode">tree,form</field>
         <field name="target">current</field>
-    </record>
+    </record> -->
 
     <record id="action_qctracker_subtask" model="ir.actions.act_window">
         <field name="name">Sous-Tâches 🧩</field>

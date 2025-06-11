@@ -32,7 +32,7 @@
                             <group string="ℹ️ Informations de l'évaluation" class="oe_title">
                                 <field name="employee_id" string="👤 Employé" options="{'no_create_edit': True}"/>
                                 <field name="task_id" string="🚀 Projet" options="{'no_create_edit': True}"/>
-                                <field name="rating" string="⭐ Note" widget="radio"/>
+                                <field name="rating" string="⭐ Note" />
                                 <field name="on_time" string="⏱️ À l'heure" widget="boolean_toggle"/>
                                 <field name="evaluation_date" string="📅 Date d'évaluation" widget="date" options='{"format": "dd/MM/yyyy"}'/>
                                 <field name="state" string="📝 Statut" widget="selection"/>

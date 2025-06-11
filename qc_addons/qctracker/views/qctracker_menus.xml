@@ -26,7 +26,7 @@
     </data-->
 
     <data>
-        <menuitem id="menu_qctracker_root" name="QC Tracker 📊" sequence="10"/>
+        <menuitem id="menu_qctracker_root" name="QC Tracker " sequence="10"/>
 
         <menuitem id="menu_qctracker_employee_management" name="Gestion des Employés 🧑‍💼" parent="menu_qctracker_root" sequence="20"/>
         <menuitem id="menu_qctracker_employee" name="Employés 👥" parent="menu_qctracker_employee_management" action="action_qctracker_employee" sequence="10"/>
@@ -41,9 +41,9 @@
         <menuitem id="menu_qctracker_task" name="Tâches 📋" parent="menu_qctracker_task_management" action="action_qctracker_task" sequence="20"/>
         <menuitem id="menu_qctracker_subtask" name="Sous-Tâches 🧩" parent="menu_qctracker_task_management" action="action_qctracker_subtask" sequence="30"/>
 
-        <menuitem id="menu_qctracker_process_management" name="Gestion des Processus 🔄" parent="menu_qctracker_root" sequence="40"/>
+        <!-- <menuitem id="menu_qctracker_process_management" name="Gestion des Processus 🔄" parent="menu_qctracker_root" sequence="40"/>
         <menuitem id="menu_qctracker_process" name="Processus 🔄" parent="menu_qctracker_process_management" action="action_qctracker_process" sequence="10"/>
-        <menuitem id="menu_qctracker_sub_process" name="Sous-Processus 📄" parent="menu_qctracker_process_management" action="action_qctracker_sub_process" sequence="20"/>
+        <menuitem id="menu_qctracker_sub_process" name="Sous-Processus 📄" parent="menu_qctracker_process_management" action="action_qctracker_sub_process" sequence="20"/> -->
 
          <menuitem id="menu_qctracker_projectdelivery" name="Livraisons de Projets ✅"
                   parent="menu_qctracker_root" action="action_qctracker_projectdelivery" sequence="90"/>

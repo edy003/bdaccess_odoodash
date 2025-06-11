@@ -13,7 +13,7 @@
     'website': "https://qualisysconsulting.com/",
     'category': 'Quality Control', # Simplified category
     'version': '0.1',
-    'depends': ['base','web','project','hr','mail'],
+    'depends': ['base','web','project','hr','mail','board','auth_signup'],
     'data': [
         'security/qctracker_security.xml',
         # 'security/ir.model.access.csv',

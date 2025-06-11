@@ -11,5 +11,6 @@ from . import qc_tracker_skill
 from . import qc_tracker_skill_rating
 from .import qc_tracker_task_notification
 from .import qc_tracker_dashboard
+from . import ir_http
 
 
