@@ -6,11 +6,11 @@
             <field name="model">qctracker.subtask</field>
             <field name="arch" type="xml">
                 <tree>
-                    <field name="name" string="🏷️ Nom"/>
-                    <field name="task_id" string="📌 Tâche"/>
-                    <field name="start_date" string="📅 Début"/>
-                    <field name="end_date" string="🏁 Fin"/>
-                    <field name="status" string="🚦 Statut"/>
+                    <field name="name" string=" Nom"/>
+                    <field name="task_id" string="Tâche"/>
+                    <field name="start_date" string=" Début"/>
+                    <field name="end_date" string=" Fin"/>
+                    <field name="status" string=" Statut"/>
                 </tree>
             </field>
         </record>
@@ -22,14 +22,14 @@
                 <form>
                     <sheet>
                         <group>
-                            <field name="name" string="🏷️ Nom"/>
-                            <field name="task_id" string="📌 Tâche"/>
-                            <field name="employee_id" string="🧑‍💼 Employé"/>
-                            <field name="start_date" string="📅 Début"/>
-                            <field name="end_date" string="🏁 Fin"/>
-                            <field name="status" string="🚦 Statut"/>
+                            <field name="name" string=" Nom"/>
+                            <field name="task_id" string=" Tâche"/>
+                            <field name="employee_id" string=" Employé"/>
+                            <field name="start_date" string=" Début"/>
+                            <field name="end_date" string=" Fin"/>
+                            <field name="status" string=" Statut"/>
                         </group>
-                        <field name="description" string="📝 Description"/>
+                        <field name="description" string=" Description"/>
                     </sheet>
                 </form>
             </field>

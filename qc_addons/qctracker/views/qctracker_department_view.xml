@@ -22,7 +22,7 @@
                         <group>
                             <field name="name"/>
                             <field name="employee_ids" widget="many2many_tags"/>
-                            <field name="project_ids" widget="many2many_tags"/>
+                            <!-- <field name="project_ids" widget="many2many_tags"/> -->
                             <field name="active"/>
                         </group>
                     </sheet>

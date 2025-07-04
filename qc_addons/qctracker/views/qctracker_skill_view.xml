@@ -6,7 +6,7 @@
             <field name="model">qctracker.skill.category</field>
             <field name="arch" type="xml">
                 <tree>
-                    <field name="name" string="📂 Catégorie"/>
+                    <field name="name" string="Catégorie"/>
                 </tree>
             </field>
         </record>
@@ -18,7 +18,7 @@
                 <form>
                     <sheet>
                         <group>
-                            <field name="name" string="📂 Catégorie"/>
+                            <field name="name" string=" Catégorie"/>
                         </group>
                     </sheet>
                 </form>
@@ -30,11 +30,11 @@
             <field name="model">qctracker.skill</field>
             <field name="arch" type="xml">
                 <tree>
-                    <field name="name" string="🛠️ Compétence"/>
-                    <field name="category_id" string="📂 Catégorie"/>
-                    <field name="level" string="📊 Niveau"/>
-                    <field name="last_used" string="📅 Dernière Utilisation"/>
-                    <field name="active" string="✅ Actif"/>
+                    <field name="name" string="Compétence"/>
+                    <field name="category_id" string="Catégorie"/>
+                    <!-- <field name="level" string="Niveau"/> -->
+                    <!-- <field name="last_used" string=" Dernière Utilisation"/> -->
+                    <!-- <field name="active" string="Actif"/> -->
                 </tree>
             </field>
         </record>
@@ -46,21 +46,21 @@
                 <form>
                     <sheet>
                         <group>
-                            <field name="name" string="🛠️ Compétence"/>
-                            <field name="category_id" string="📂 Catégorie"/>
-                            <field name="level" string="📊 Niveau"/>
-                            <field name="last_used" string="📅 Dernière Utilisation"/>
-                            <field name="active" string="✅ Actif"/>
-                            <field name="employee_ids" widget="many2many_tags" string="🧑‍💼 Employés"/>
+                            <field name="name" string=" Compétence"/>
+                            <field name="category_id" string="Catégorie"/>
+                            <!-- <field name="level" string="Niveau"/> -->
+                            <!-- <field name="last_used" string=" Dernière Utilisation"/> -->
+                            <!-- <field name="active" string="Actif"/> -->
+                            <!-- <field name="employee_ids" widget="many2many_tags" string="Employés"/> -->
                         </group>
-                        <field name="description" string="📝 Description"/>
+                        <field name="description" string="Description"/>
                     </sheet>
                 </form>
             </field>
         </record>
 
         <record id="action_qctracker_skill_category" model="ir.actions.act_window">
-            <field name="name">Catégories de Compétences 📂</field>
+            <field name="name">Catégories de Compétences </field>
             <field name="res_model">qctracker.skill.category</field>
             <field name="view_mode">tree,form</field>
             <field name="target">current</field>

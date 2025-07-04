@@ -9,7 +9,7 @@
                     <field name="name" string="Task Name " widget="badge" decoration-success="1"/>
                     <field name="employee_id" string="Assigned To " widget="many2one_button"/>
                     <field name="project_id" string="Project " widget="many2one_button"/>
-                    <field name="priority" string="Priority ⚠️" widget="badge"/>
+                    <field name="priority" string="Priority " widget="badge"/>
                     <field name="status" string="Status " widget="badge"/>
                     <field name="progress" string="Progress " widget="progressbar"/>
                 </tree>
@@ -28,7 +28,7 @@
                             </h1>
                         </div>
                         <group>
-                            <group string="Task Details ℹ️" style="background-color:#f0f8ff;">
+                            <group string="Task Details " style="background-color:#f0f8ff;">
                                 <field name="name" string="Task Name " placeholder="Enter task name" style="color:blue;"/>
                                 <field name="description" string="Description " placeholder="Enter description" style="color:green;"/>
                                 <field name="employee_id" string="Assigned To " options="{'no_create_edit': True}"/>
@@ -38,9 +38,9 @@
                             <group string="Dates &amp; Progress " style="background-color:#e6e6fa;">
                                 <field name="start_date" string="Start Date "/>
                                 <field name="expected_end_date" string="Expected End Date "/>
-                                <field name="end_date" string="End Date ✅"/>
+                                <field name="end_date" string="End Date "/>
                                 <field name="progress" string="Progress " widget="progressbar"/>
-                                <field name="priority" string="Priority ⚠️" widget="radio" options="{'horizontal': true}"/>
+                                <field name="priority" string="Priority " widget="radio" options="{'horizontal': true}"/>
                                 <field name="status" string="Status " widget="radio" options="{'horizontal': true}"/>
                             </group>
                         </group>

@@ -6,13 +6,13 @@
             <field name="model">qctracker.employeerating</field>
             <field name="arch" type="xml">
                 <tree decoration-info="rating &lt; 5" decoration-warning="rating &gt;= 5 and rating &lt; 8" decoration-danger="rating &gt;= 8">
-                    <field name="employee_id" string="👤 Employé" widget="many2one_button"/>
-                    <field name="task_id" string="🚀 Projet" widget="many2one_button"/>
-                    <field name="rating" string="⭐ Note" widget="progressbar" options="{'max_value': 10}"/>
-                    <field name="on_time" string="⏱️ À l'heure" widget="boolean_toggle"/>
-                    <field name="evaluation_date" string="📅 Date d'évaluation" widget="date" options='{"format": "dd/MM/yyyy"}'/>
-                    <field name="state" string="📝 Statut" widget="badge" decoration-success="state == 'submitted'" decoration-muted="state == 'draft'"/>
-                    <field name="manager_id" string="💼 Manager" widget="many2one_button"/>
+                    <field name="employee_id" string=" Employé" widget="many2one_button"/>
+                    <field name="task_id" string="Projet" widget="many2one_button"/>
+                    <field name="rating" string="Note" widget="progressbar" options="{'max_value': 10}"/>
+                    <field name="on_time" string=" À l'heure" widget="boolean_toggle"/>
+                    <field name="evaluation_date" string="Date d'évaluation" widget="date" options='{"format": "dd/MM/yyyy"}'/>
+                    <field name="state" string="Statut" widget="badge" decoration-success="state == 'submitted'" decoration-muted="state == 'draft'"/>
+                    <field name="manager_id" string="Manager" widget="many2one_button"/>
                 </tree>
             </field>
         </record>
@@ -29,17 +29,17 @@
                             </h1>
                         </div>
                         <group>
-                            <group string="ℹ️ Informations de l'évaluation" class="oe_title">
-                                <field name="employee_id" string="👤 Employé" options="{'no_create_edit': True}"/>
-                                <field name="task_id" string="🚀 Projet" options="{'no_create_edit': True}"/>
-                                <field name="rating" string="⭐ Note" />
-                                <field name="on_time" string="⏱️ À l'heure" widget="boolean_toggle"/>
-                                <field name="evaluation_date" string="📅 Date d'évaluation" widget="date" options='{"format": "dd/MM/yyyy"}'/>
-                                <field name="state" string="📝 Statut" widget="selection"/>
-                                <field name="manager_id" string="💼 Manager" options="{'no_create_edit': True}"/>
+                            <group string="Informations de l'évaluation" class="oe_title">
+                                <field name="employee_id" string="Employé" options="{'no_create_edit': True}"/>
+                                <field name="task_id" string="Projet" options="{'no_create_edit': True}"/>
+                                <field name="rating" string=" Note" />
+                                <field name="on_time" string=" À l'heure" widget="boolean_toggle"/>
+                                <field name="evaluation_date" string=" Date d'évaluation" widget="date" options='{"format": "dd/MM/yyyy"}'/>
+                                <field name="state" string="Statut" widget="selection"/>
+                                <field name="manager_id" string=" Manager" options="{'no_create_edit': True}"/>
                             </group>
-                            <group string="💬 Commentaires" class="oe_title">
-                                <field name="comments" string="💬 Commentaires" widget="html"/>
+                            <group string="Commentaires" class="oe_title">
+                                <field name="comments" string="Commentaires" widget="html"/>
                             </group>
                         </group>
                     </sheet>
@@ -63,9 +63,9 @@
                                         </a>
                                     </h4>
                                     <ul>
-                                        <li><i class="fa fa-star" style="color: #008000;"></i> ⭐ Note: <field name="rating"/></li>
-                                        <li><i class="fa fa-clock-o" style="color: #000080;"></i> ⏱️ À l'heure: <field name="on_time"/></li>
-                                        <li><i class="fa fa-calendar" style="color: #000000;"></i> 📅 Date: <field name="evaluation_date" widget="date" options='{"format": "dd/MM/yyyy"}'/></li>
+                                        <li><i class="fa fa-star" style="color: #008000;"></i> Note: <field name="rating"/></li>
+                                        <li><i class="fa fa-clock-o" style="color: #000080;"></i>  À l'heure: <field name="on_time"/></li>
+                                        <li><i class="fa fa-calendar" style="color: #000000;"></i>  Date: <field name="evaluation_date" widget="date" options='{"format": "dd/MM/yyyy"}'/></li>
                                     </ul>
                                 </div>
                             </div>

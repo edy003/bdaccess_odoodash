@@ -1,27 +1,27 @@
 <odoo>
     <record id="action_qctracker_employee" model="ir.actions.act_window">
-        <field name="name">Employés 👥</field>
+        <field name="name">Employés </field>
         <field name="res_model">qctracker.employee</field>
         <field name="view_mode">tree,form,kanban</field>
         <field name="target">current</field>
     </record>
 
     <record id="action_qctracker_department" model="ir.actions.act_window">
-        <field name="name">Départements 🏢</field>
+        <field name="name">Départements </field>
         <field name="res_model">qctracker.department</field>
         <field name="view_mode">tree,form,kanban,pivot</field>
         <field name="target">current</field>
     </record>
 
     <record id="action_qctracker_project" model="ir.actions.act_window">
-        <field name="name">Projets 🚀</field>
+        <field name="name">Projets </field>
         <field name="res_model">qctracker.project</field>
         <field name="view_mode">tree,form,kanban,graph</field>
         <field name="target">current</field>
     </record>
 
     <record id="action_qctracker_task" model="ir.actions.act_window">
-        <field name="name">Tâches 📋</field>
+        <field name="name">Tâches </field>
         <field name="res_model">qctracker.task</field>
         <field name="view_mode">tree,form,kanban</field>
         <field name="target">current</field>
@@ -42,42 +42,42 @@
     </record> -->
 
     <record id="action_qctracker_subtask" model="ir.actions.act_window">
-        <field name="name">Sous-Tâches 🧩</field>
+        <field name="name">Sous-Tâches </field>
         <field name="res_model">qctracker.subtask</field>
         <field name="view_mode">tree,form,kanban</field>
         <field name="target">current</field>
     </record>
 
     <record id="action_qctracker_employeerating" model="ir.actions.act_window">
-        <field name="name">Évaluations d'Employés ⭐</field>
+        <field name="name">Évaluations d'Employés </field>
         <field name="res_model">qctracker.employeerating</field>
         <field name="view_mode">tree,form,kanban</field>
         <field name="target">current</field>
     </record>
 
     <record id="action_qctracker_skill_category" model="ir.actions.act_window">
-        <field name="name">Catégories de Compétences 📂</field>
+        <field name="name">Catégories de Compétences </field>
         <field name="res_model">qctracker.skill.category</field>
         <field name="view_mode">tree,form</field>
         <field name="target">current</field>
     </record>
 
     <record id="action_qctracker_skill" model="ir.actions.act_window">
-        <field name="name">Compétences 🛠️</field>
+        <field name="name">Compétences </field>
         <field name="res_model">qctracker.skill</field>
         <field name="view_mode">tree,form</field>
         <field name="target">current</field>
     </record>
 
     <record id="action_qctracker_skillrating" model="ir.actions.act_window">
-        <field name="name">Évaluations de Compétences ⭐</field>
+        <field name="name">Évaluations de Compétences </field>
         <field name="res_model">qctracker.skillrating</field>
         <field name="view_mode">tree,form</field>
         <field name="target">current</field>
     </record>
 
     <record id="action_qctracker_projectdelivery" model="ir.actions.act_window">
-            <field name="name">Livraisons de Projets ✅</field>
+            <field name="name">Livraisons de Projets </field>
             <field name="res_model">qctracker.projectdelivery</field>
             <field name="view_mode">tree,form</field>
             <field name="target">current</field>

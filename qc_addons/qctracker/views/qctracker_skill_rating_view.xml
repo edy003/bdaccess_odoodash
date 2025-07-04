@@ -1,4 +1,4 @@
-<odoo>
+<!-- <odoo>
     <!-- Tree View for Skill Ratings -->
     <record id="view_qctracker_skillrating_tree" model="ir.ui.view">
         <field name="name">qctracker.skillrating.tree</field>
@@ -23,10 +23,10 @@
                     <group>
                         <h2><strong>Skill Rating Details</strong></h2>
                         <div class="oe_kanban_details animated fadeIn">
-                            <field name="rating_id" class="oe_form_field"/>
-                            <field name="skill_id" class="oe_form_field"/>
-                            <field name="rating" class="oe_form_field"/>
-                            <field name="comments" class="oe_form_field"/>
+                            <!-- <field name="rating_id" class="oe_form_field"/>
+                            <field name="skill_id" class="oe_form_field"/> -->
+                            <!-- <field name="rating" class="oe_form_field"/> -->
+                            <!-- <field name="comments" class="oe_form_field"/> -->
                         </div>
                     </group>
                 </sheet>
@@ -87,4 +87,4 @@
             </pivot>
         </field>
     </record>
-</odoo>
+</odoo> -->

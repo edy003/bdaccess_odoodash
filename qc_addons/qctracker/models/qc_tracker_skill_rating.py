@@ -45,12 +45,12 @@ class QCTrackerSkillRating(models.Model):
     _description = 'Skill Rating in Evaluation'
     employee_id = fields.Many2one('qctracker.employee', string='Employee')
 
-    rating_id = fields.Many2one(
-        'qctracker.employeerating',
-        string='Evaluation',
-        # required=True,
-        ondelete='cascade'
-    )
+    # rating_id = fields.Many2one(
+    #     'qctracker.employeerating',
+    #     string='Evaluation',
+    #     # required=True,
+    #     ondelete='cascade'
+    # )
     skill_id = fields.Many2one('qctracker.skill', string='Skill', required=True)
     rating = fields.Selection([
         ('1', 'Basic'),

@@ -16,7 +16,7 @@
     'depends': ['base','web','project','hr','mail','board','auth_signup'],
     'data': [
         'security/qctracker_security.xml',
-        # 'security/ir.model.access.csv',
+        'security/ir.model.access.csv',
         'views/qctracker_employee_view.xml',
         'views/qctracker_project_view.xml',
         'views/qctracker_task_view.xml',

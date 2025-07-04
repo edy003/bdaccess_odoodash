@@ -1255,7 +1255,7 @@ if __name__ == '__main__':
     print("Démarrage de l'application Dash...")
     app = create_dash_app()
     print("Lancement du serveur sur http://127.0.0.1:8050/dash/")
-    app.run(debug=True, host='127.0.0.1', port=8050)  # Correction: run_server au lieu de run
+    app.run(host='127.0.0.1', port=8050)  # Correction: run_server au lieu de run
 
 
 # first version

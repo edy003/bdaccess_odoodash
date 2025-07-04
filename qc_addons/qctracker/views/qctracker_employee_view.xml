@@ -44,19 +44,19 @@
                             </group>
                         </group>
                         <notebook>
-                            <page string="Tasks 📋" style="background-color:#f5f5f5;">
+                            <page string="Tasks " style="background-color:#f5f5f5;">
                                 <field name="task_ids" widget="one2many_list" options="{'create': false, 'edit': false}"/>
                             </page>
-                            <page string="Ratings ⭐" style="background-color:#f0ffff;">
+                            <page string="Ratings " style="background-color:#f0ffff;">
                                 <field name="rating_employee_ids" widget="one2many_list" options="{'create': false, 'edit': false}"/>
                             </page>
-                            <page string="Projects 🚀" style="background-color:#fff0f5;">
+                            <page string="Projects " style="background-color:#fff0f5;">
                                 <field name="project_ids" widget="one2many_list" options="{'create': false, 'edit': false}"/>
                             </page>
-                            <page string="Deliveries 📦" style="background-color:#f0e68c;">
+                            <page string="Deliveries " style="background-color:#f0e68c;">
                                 <field name="project_delivery_ids" widget="one2many_list" options="{'create': false, 'edit': false}"/>
                             </page>
-                            <page string="Notifications 🔔" style="background-color:#e0ffff;">
+                            <page string="Notifications " style="background-color:#e0ffff;">
                                 <field name="notification_ids" widget="one2many_list" options="{'create': false, 'edit': false}"/>
                             </page>
                         </notebook>
