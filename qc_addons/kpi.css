@@ -1,0 +1,5 @@
+/* Pour masquer spécifiquement le footer Odoo */
+.o_main_footer { display: none !important; }
+
+/* Pour ajuster selon la hauteur disponible */
+height: calc(100vh - 60px); /* 60px = hauteur approximative du menu Odoo */

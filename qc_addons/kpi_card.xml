@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates>
+    <t t-name="qc_dashboard.UserKPIDashboard" owl="1">
+        <div class="qc-dashboard-container bg-gray-50" style="height: 100vh; width: 100vw; position: relative; overflow: hidden;">
+            <!-- Container principal avec hauteur flexible -->
+            <div class="flex flex-col vh-100 overflow-y-auto">
+                <!-- Header fixe -->
+                <div class="flex-shrink-0 p-6 bg-white shadow-sm border-b">
+                    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4">
+                        <h1 class="text-3xl font-bold text-gray-900">Dashboard de Test - Menu Odoo Visible</h1>
+                        <div class="flex flex-col">
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Filtre de test</label>
+                            <select class="block w-full sm:w-64 px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm bg-white">
+                                <option value="option1">Option de test 1</option>
+                                <option value="option2">Option de test 2</option>
+                                <option value="option3">Option de test 3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contenu scrollable -->
+                <div class="flex-1 overflow-y-auto">
+                    <div class="p-6 space-y-6" style="padding-bottom: 60px;">
+
+                        <!-- KPI Cards de test -->
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-blue-500">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <h2 class="text-lg font-semibold text-gray-900 mb-1">Total Fictif</h2>
+                                        <p class="text-3xl font-bold text-blue-600">1,234</p>
+                                    </div>
+                                    <div class="text-blue-500">
+                                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="text-gray-600 text-sm mt-2">Données de test statiques</p>
+                            </div>
+
+                            <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-green-500">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <h2 class="text-lg font-semibold text-gray-900 mb-1">Exemple Actifs</h2>
+                                        <p class="text-3xl font-bold text-green-600">567</p>
+                                    </div>
+                                    <div class="text-green-500">
+                                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="text-gray-600 text-sm mt-1">Statut fictif pour test</p>
+                                <div class="text-xs text-gray-500 mt-2 flex items-center">
+                                    <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full">
+                                        45% de test
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-purple-500">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <h2 class="text-lg font-semibold text-gray-900 mb-1">Nouveaux Test</h2>
+                                        <p class="text-3xl font-bold text-purple-600">89</p>
+                                    </div>
+                                    <div class="text-purple-500">
+                                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="text-gray-600 text-sm mt-1">Créés dans les 30 derniers jours (fictif)</p>
+                                <div class="text-xs text-gray-500 mt-2 flex items-center">
+                                    <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded-full">
+                                        7% du total
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Statistiques détaillées de test -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                            <div class="bg-white rounded-lg shadow p-4 text-center">
+                                <div class="text-2xl font-bold text-gray-800">123</div>
+                                <div class="text-sm text-gray-600">Connexions fictives</div>
+                            </div>
+                            <div class="bg-white rounded-lg shadow p-4 text-center">
+                                <div class="text-2xl font-bold text-gray-800">4.5</div>
+                                <div class="text-sm text-gray-600">Moyenne test</div>
+                            </div>
+                            <div class="bg-white rounded-lg shadow p-4 text-center">
+                                <div class="text-2xl font-bold text-gray-800">67</div>
+                                <div class="text-sm text-gray-600">Multi-test</div>
+                            </div>
+                            <div class="bg-white rounded-lg shadow p-4 text-center">
+                                <div class="text-2xl font-bold text-gray-800">12</div>
+                                <div class="text-sm text-gray-600">Max test</div>
+                            </div>
+                        </div>
+
+                        <!-- Section de contenu Lorem Ipsum 1 -->
+                        <div class="bg-white rounded-lg shadow-lg p-6">
+                            <h2 class="text-xl font-bold text-gray-900 mb-4">Section Lorem Ipsum 1</h2>
+                            <p class="text-gray-600 mb-4">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                            <p class="text-gray-600">
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+
+                        <!-- Section de contenu Lorem Ipsum 2 -->
+                        <div class="bg-white rounded-lg shadow-lg p-6">
+                            <h2 class="text-xl font-bold text-gray-900 mb-4">Section Lorem Ipsum 2</h2>
+                            <p class="text-gray-600 mb-4">
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                                eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                            </p>
+                            <p class="text-gray-600">
+                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
+                                qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
+                            </p>
+                        </div>
+
+                        <!-- Section graphique fictive -->
+                        <div class="bg-white rounded-lg shadow-lg p-6">
+                            <h2 class="text-xl font-bold text-gray-900 mb-4">Graphique de Test (Statique)</h2>
+                            <div class="flex flex-col justify-center items-center h-64 text-gray-500 bg-gray-50 rounded-lg">
+                                <svg class="w-16 h-16 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 00-2-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                                </svg>
+                                <p class="text-lg font-medium">Zone de Graphique Fictive</p>
+                                <p class="text-sm mt-2">Ici sera affiché un graphique (contenu statique)</p>
+                            </div>
+                        </div>
+
+                        <!-- Section de contenu Lorem Ipsum 3 -->
+                        <div class="bg-white rounded-lg shadow-lg p-6">
+                            <h2 class="text-xl font-bold text-gray-900 mb-4">Section Lorem Ipsum 3</h2>
+                            <p class="text-gray-600 mb-4">
+                                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti
+                                quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa.
+                            </p>
+                            <p class="text-gray-600">
+                                Qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+                                Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.
+                            </p>
+                        </div>
+
+                        <!-- Section résumé fictif -->
+                        <div class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg p-6">
+                            <h3 class="text-lg font-semibold text-gray-900 mb-4">Résumé de Test (Données Fictives)</h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                                <div>
+                                    <span class="font-medium text-gray-700">Total fictif:</span>
+                                    <span class="ml-2 text-gray-900">1,234</span>
+                                </div>
+                                <div>
+                                    <span class="font-medium text-gray-700">Pourcentage test:</span>
+                                    <span class="ml-2 text-green-600 font-semibold">45%</span>
+                                </div>
+                                <div>
+                                    <span class="font-medium text-gray-700">Inactifs fictifs:</span>
+                                    <span class="ml-2 text-red-600">667</span>
+                                </div>
+                                <div>
+                                    <span class="font-medium text-gray-700">Nouveaux test (30j):</span>
+                                    <span class="ml-2 text-purple-600">7%</span>
+                                </div>
+                                <p class="text-gray-600 mb-4">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+</templates>
